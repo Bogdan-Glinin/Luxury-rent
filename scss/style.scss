@@ -55,7 +55,6 @@ body {
 }
 
 .wrapper {
-    height: 3100px;
     width: 1920px;
     margin-left: auto;
     margin-right: auto;
@@ -191,7 +190,6 @@ body {
 
     .main {
         width: 100%;
-        height: 800px;
 
         .main_body {
             height: 100%;
@@ -610,6 +608,122 @@ body {
             #feedback_button:hover {
                 background: #F4F4F4;
                 color: #27282B;
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        margin-top: 30px;
+
+        .footer_wrapper {
+            width: 1205px;
+            height: 198px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+
+            .title {
+                color: #FFC68C;
+                font-size: 20px;
+                font-family: Montserrat;
+                line-height: 24.38px;
+            }
+
+            .footer_politics {
+                width: 340px;
+                height: 175px;
+                display: flex;
+                flex-direction: column;
+
+                .politics_logo {
+                    width: 165px;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+
+                .politics_content {
+                    margin-top: 12px;
+                    color: #F4F4F4;
+                    font-family: Montserrat;
+                    font-size: 20px;
+                    line-height: 24.38px;
+                }
+            }
+
+            .footer_menu {
+                margin-left: 100px;
+                margin-top: 13px;
+                width: 150px;
+
+                .menu_title {
+                    margin-bottom: 20px;
+                }
+
+                .menu_content {
+
+                    p {
+                        font-size: 20px;
+                        line-height: 24.38px;
+                        color: #F4F4F4;
+                        margin-top: 5px;
+                    }
+
+                }
+            }
+
+            .footer_contacts {
+                margin-top: 13px;
+                margin-left: 135px;
+                width: 240px;
+
+                .contacts_title {
+                    margin-bottom: 25px;
+                }
+
+                .contacts_content {
+                    p {
+                        color: #F4F4F4;
+                        font-size: 20px;
+                        line-height: 24.38px;
+                    }
+
+                    margin-bottom: 21px;
+                }
+
+                .writeUs_title {
+                    margin-bottom: 21px;
+                }
+
+                .writeUs_content {
+                    color: #F4F4F4;
+                    font-size: 20px;
+                    line-height: 24.38px;
+                }
+            }
+
+            .footer_address {
+                margin-left: 72px;
+                margin-top: 13px;
+                width: 185px;
+
+                .address_content {
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+
+                    p {
+                        color: #F4F4F4;
+                        font-size: 20px;
+                        line-height: 24.38px;
+                    }
+                }
+
+                .address_links {
+                    width: 160px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
             }
         }
     }
