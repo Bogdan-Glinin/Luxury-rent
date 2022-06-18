@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <title>Luxury rent</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -217,7 +219,8 @@
                     </div>
                 </div>
                 <div class="feedback">
-                    <form action="mail.php" method="POST">
+                    <div class="note"></div>
+                    <form id="ajax-form" action="mail.php" method="POST">
                         <div class="feedback_title">Остались вопросы?</div>
                         <div class="feedback_text">Мы перезвоним вам и проконсультируем по любому вопросу</div>
                         <input type="text" name="user_name" id="feedback_name" placeholder="Ваше имя">
@@ -290,6 +293,7 @@
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/feedback.js"></script>
 </body>
 
 </html>
