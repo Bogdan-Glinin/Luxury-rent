@@ -1,7 +1,9 @@
 <?php
 
-$name = $_POST['user_name'];
-$phone = $_POST['user_phone'];
+$data = [
+    "feedback_name" => $_POST['feedback_name'],
+    "feedback_number" => $_POST['feedback_number']
+];
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -19,7 +21,7 @@ $mail->addAddress('luxuryrentmanagermsk@gmail.com');
 
 $mail->Subject = 'Обратная свзяь';
 
-$body = '' . $name . ' оставил заявку на звонок, его телефон ' . $phone;
+$body = '' . $data["feedback_name"] . ' оставил заявку на звонок, его телефон ' . $data["feedback_number"];
 $mail->Body = $body;
 
 $mail->send();

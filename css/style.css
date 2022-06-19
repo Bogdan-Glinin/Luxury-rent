@@ -687,7 +687,7 @@ body {
   margin-left: 360px;
 }
 
-.wrapper .main .feedback #feedback_name {
+.wrapper .main .feedback .feedback_name {
   height: 50px;
   width: 468px;
   margin-left: 360px;
@@ -699,7 +699,7 @@ body {
   margin-right: 105px;
 }
 
-.wrapper .main .feedback #feedback_number {
+.wrapper .main .feedback .feedback_number {
   height: 50px;
   width: 468px;
   margin-top: 30px;
@@ -709,7 +709,7 @@ body {
   padding-left: 20px;
 }
 
-.wrapper .main .feedback #feedback_button {
+.wrapper .main .feedback .feedback_button {
   width: 465px;
   height: 60px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(39, 40, 43, 0.5)), to(rgba(39, 40, 43, 0)));

@@ -219,14 +219,13 @@
                     </div>
                 </div>
                 <div class="feedback">
-                    <div class="note"></div>
                     <form id="ajax-form" action="mail.php" method="POST">
                         <div class="feedback_title">Остались вопросы?</div>
                         <div class="feedback_text">Мы перезвоним вам и проконсультируем по любому вопросу</div>
-                        <input type="text" name="user_name" id="feedback_name" placeholder="Ваше имя">
-                        <input type="text" name="user_phone" id="feedback_number" type="tel"
+                        <input type="text" name="user_name" class="feedback_name" placeholder="Ваше имя">
+                        <input type="text" name="user_phone" class="feedback_number" type="tel"
                             placeholder="+7 (___)-___-__-__">
-                        <button type="submit" id="feedback_button">Оставить заявку</button>
+                        <button type="submit" class="feedback_button">Оставить заявку</button>
                     </form>
                 </div>
             </div>
@@ -289,6 +288,18 @@
             </div>
         </div>
 
+    </div>
+
+    <div class="popup">
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="#" class="popup_close"></a>
+                <div class="popup_title">Модальное окно</div>
+                <div class="popup_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque perspiciatis provident dicta minima,
+                     nostrum ipsam veritatis commodi aliquam odit. Possimus voluptatibus non dolorum consectetur deleniti atque soluta excepturi
+                      ut delectus!</div>
+            </div>
+        </div>
     </div>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

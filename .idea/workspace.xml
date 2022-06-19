@@ -7,7 +7,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/phpmailer/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -49,6 +49,8 @@
       <workItem from="1655459344651" duration="364000" />
       <workItem from="1655463653463" duration="5623000" />
       <workItem from="1655507586766" duration="998000" />
+      <workItem from="1655569287372" duration="177000" />
+      <workItem from="1655569522791" duration="9000" />
     </task>
     <servers />
   </component>
