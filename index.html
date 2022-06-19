@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <title>Luxury rent</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="header">
+        <div class="header lock_padding">
             <div class="header_body">
                 <div class="header_menu">
                     <div class="menu_location">
@@ -31,9 +32,9 @@
                         <p>+7 (987) 935-83-24</p>
                     </div>
                     <div class="menu_account">
-                        <div class="account_link">
+                        <a href="#popup" class="account_link popup_link">
                             <img src="images/account.png" alt="">
-                        </div>
+                        </a>
                         <div id="account_burger">
                             <div class="burger_line first"></div>
                             <div class="burger_line second"></div>
@@ -44,7 +45,7 @@
                                 <img src="images/Close.png" alt="">
                             </div>
                             <nav>
-                                <a href="#">Мой профиль</a>
+                                <a href="#popup" class="popup_link">Мой профиль</a>
                                 <a href="#">Автопарк</a>
                                 <a href="#">Условия</a>
                                 <a href="#">О нас</a>
@@ -290,14 +291,25 @@
 
     </div>
 
-    <div class="popup">
+    <div class="popup" id="popup">
         <div class="popup_body">
             <div class="popup_content">
-                <a href="#" class="popup_close"></a>
-                <div class="popup_title">Модальное окно</div>
-                <div class="popup_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque perspiciatis provident dicta minima,
-                     nostrum ipsam veritatis commodi aliquam odit. Possimus voluptatibus non dolorum consectetur deleniti atque soluta excepturi
-                      ut delectus!</div>
+                <div class="popup_letter"></div>
+                <div class="popup_title">Вход в личный кабинет</div>
+                <input type="text" placeholder="Логин" class="popup_login popup_input">
+                <input type="text" placeholder="Пароль" class="popup_password popup_input">
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup_2">
+        <div class="popup_body">
+            <div class="popup_content">
+                <div class="popup_title">Модальное окно 2</div>
+                <div class="popup_text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque perspiciatis
+                    provident dicta minima,
+                    nostrum ipsam veritatis commodi aliquam odit. Possimus voluptatibus non dolorum consectetur deleniti
+                    atque soluta excepturi
+                    ut delectus!</div>
             </div>
         </div>
     </div>
@@ -305,6 +317,7 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/feedback.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>
