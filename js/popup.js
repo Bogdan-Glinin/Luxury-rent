@@ -52,7 +52,6 @@ function bodyLock() {
         for (let index = 0; index < lockPadding.length; index++) {
             const el = lockPadding[index];
             el.style.paddingRight = lockPaddingValue;
-            console.log(lockPaddingValue);
         }
     }
     body.style.paddingRight = lockPaddingValue;

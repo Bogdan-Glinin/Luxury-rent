@@ -935,6 +935,7 @@ body.lock {
   line-height: 58.51px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .popup .popup_body .popup_content .popup_input {
@@ -947,6 +948,7 @@ body.lock {
   font-family: Montserrat;
   line-height: 24.38px;
   font-size: 20px;
+  display: block;
 }
 
 .popup .popup_body .popup_content .popup_login {
@@ -954,6 +956,60 @@ body.lock {
 }
 
 .popup .popup_body .popup_content .popup_password {
+  margin-top: 15px;
+}
+
+.popup .popup_body .popup_content .popup_button {
+  display: block;
+  background-color: #27282B;
+  width: 415px;
+  height: 60px;
+  margin-left: 192px;
+  border: 2px solid #FFC68C;
+  border-radius: 20px;
+  margin-top: 45px;
+  color: #F4F4F4;
+  font-size: 24px;
+  line-height: 29.26px;
+  margin-bottom: 17px;
+}
+
+.popup .popup_body .popup_content .popup_button:hover {
+  background-color: #FFC68C;
+  color: #27282B;
+}
+
+.popup .popup_body .popup_content .popup_registration {
+  height: 45px;
+  width: 250px;
+  font-size: 20px;
+  color: #FFC68C;
+  text-align: center;
+  line-height: 24.38px;
+}
+
+.popup .popup_body .popup_content .popup_terms {
+  width: 430px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #F4F4F4;
+  font-size: 20px;
+  line-height: 24.38px;
+  position: relative;
+  top: 86px;
+}
+
+.popup .popup_body .popup_content .popup_terms a {
+  color: #FFC68C;
+}
+
+.popup .popup_body .popup_content .popup_name {
+  margin-top: 47px;
+}
+
+.popup .popup_body .popup_content .popup_email {
   margin-top: 15px;
 }
 
