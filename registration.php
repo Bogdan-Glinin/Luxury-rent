@@ -1,10 +1,17 @@
 <?php
 
-$login = filter_var(trim($_POST['login']), FILTER_SANITIZE_STRING);
-$name = filter_var(trim($_POST['name']), FILTER_SANITIZE_STRING);
-$password = filter_var(trim($_POST['password']), FILTER_SANITIZE_STRING);
+$data = [
+    "popup_name" => $_POST['popup_name'],
+    "popup_email" => $_POST['popup_email'],
+    "popup_password" => $_POST['popup_password']
+];
 
-if (strlen($name) < 3 || strlen($name) > 15) {
-    $result = 'login';
-    echo $result;
-}
+$name = $data["popup_name"];
+$mail = $data["popup_email"];
+$password = $data["popup_password"];
+
+$mysql = new mysqli('localhost', 'root', 'root', 'luxuryrent');
+
+$mysql->query("INSERT INTO `user` (`name`, `email`, `password`) VALUES ('$name','$mail','$password')");
+
+$mysql->close();

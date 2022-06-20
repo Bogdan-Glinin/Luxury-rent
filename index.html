@@ -293,12 +293,12 @@
 
     <div class="popup" id="popup">
         <div class="popup_body">
-            <div class="popup_content">
-                <form action="" method="post">
+            <form action="auth.php" method="post">
+                <div class="popup_content">
                     <div class="popup_letter"></div>
                     <div class="popup_title">Вход в личный кабинет</div>
-                    <input type="text" placeholder="Логин" class="popup_login popup_input">
-                    <input type="password" placeholder="Пароль" class="popup_password popup_input">
+                    <input type="text" placeholder="Логин" name="auth_login" class="popup_login popup_input">
+                    <input type="password" placeholder="Пароль" name="auth_password" class="popup_password popup_input">
                     <button action="submit" class="popup_button">Вход</button>
                     <a href="#popup_2" class="popup_link popup_registration">
                         <div>Вас еще нет в системе?<br>
@@ -307,25 +307,30 @@
                     <div class="popup_terms">Нажимая на кнопку, вы принимаете<br>
                         <a href="#">условия пользовательского соглашения</a>
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </div>
     <div class="popup" id="popup_2">
         <div class="popup_body">
-            <div class="popup_content">
-                <form action="registration.php" method="post">
+            <form action="registration.php" method="post">
+                <div class="popup_content">
                     <div class="popup_title">Регистрация</div>
-                    <input type="text" placeholder="Ваше Имя:" name="name" class="popup_name popup_input">
-                    <input type="email" placeholder="Ваш E-mail:" name="login" class="popup_email popup_input">
-                    <input type="password" placeholder="Пароль" name="pass" class="popup_password popup_input">
-                    <input type="password" placeholder="Повторите пароль" class="popup_password popup_input">
-                    <button action="submit" class="popup_button">Зарегистрироваться</button>
-                    <div class="popup_terms">Нажимая на кнопку, вы принимаете<br>
+                    <input type="text" id="popup_name" placeholder="Ваше Имя:" name="popup_name"
+                        class="popup_name popup_input">
+                    <input type="email" id="popup_email" placeholder="Ваш E-mail:" name="popup_email"
+                        class="popup_email popup_input">
+                    <input type="password" id="popup_password" placeholder="Пароль" name="popup_password"
+                        class="popup_password popup_input">
+                    <input type="password" id="popup_passwordRepeat" name="popup_passwordRepeat"
+                        placeholder="Повторите пароль" class="popup_passwordRepeat popup_input">
+                    <button action="submit" id="popup_button" class="popup_button">Зарегистрироваться</button>
+                    <div id="error"></div>
+                    <div class="popup_term last">Нажимая на кнопку, вы принимаете<br>
                         <a href="#">условия пользовательского соглашения</a>
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </div>
 
