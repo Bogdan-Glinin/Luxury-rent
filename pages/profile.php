@@ -1,8 +1,6 @@
 <?php
 include "../userProfile.php";
 $name = $user["name"];
-echo $name;
-echo "123";
 ?>
 
 <!DOCTYPE html>
