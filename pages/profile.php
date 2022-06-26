@@ -68,35 +68,115 @@ $name = $user["name"];
                 <div class="wrapper_menu">
                     <div class="wrapper_letter"></div>
                     <div class="menu_content">
-                        <a href="#">Мой профиль</a>
-                        <a href="#">Проверка документов</a>
-                        <a href="#">Мои заявки</a>
+                        <div id="profile">Мой профиль</div>
+                        <div id="docs">Проверка документов</div>
+                        <div id="rent">Мои заявки</div>
                     </div>
                 </div>
                 <div class="wrapper_profile">
-                    <div class="profile_subtitle">Мой профиль</div>
-                    <div class="profile_title">Необходимые настройки</div>
-                    <div class="profile_personal">
-                        <div class="personal_title title">Личная информация</div>
-                        <input class="profile_input" value="<?php echo $user['name'] ?>" type="text" placeholder="Имя">
-                        <input class="profile_input" type="text" placeholder="Фамилия">
-                        <input class="profile_input" type="text" placeholder="Отчество">
-                        <input class="profile_input" type="date" placeholder="Дата рождения">
-                    </div>
-                    <div class="profile_additional">
-                        <div class="personal_title title">Дополнительная информация</div>
-                        <input class="additional_input" type="tel" placeholder="+7 (___)-___-__-__">
-                        <input class="additional_input" value="<?php echo $user['email'] ?>" type="email" placeholder="E-mail">
-                        <input class="additional_input" type="number" placeholder="Водительский стаж от">
-                        <input class="additional_input" type="text" placeholder="Гражданство">
-                    </div>
-                    <div class="profile_passwordChange">
-                        <div class="personal_title title">Изменение пароля</div>
-                        <input class="additional_input" type="password" placeholder="Новый пароль">
-                        <input class="additional_input" type="password" placeholder="Повторите новый пароль">
-                    </div>
-                    <button id="profile_edit" class="profile_edit profile">Редактировать</button>
-                    <button id="profile_save" class="profile_save profile">Сохранить</button>
+                    <form action="../edit.php" method="POST">
+                        <div class="profile_subtitle">Мой профиль</div>
+                        <div class="profile_title">Необходимые настройки</div>
+                        <div class="profile_personal">
+                            <div class="personal_title title">Личная информация</div>
+                            <input class="profile_input" name="name" value="<?php echo $user['name'] ?>" type="text" placeholder="Имя">
+                            <input class="profile_input" name="surname" value="<?php echo $user['surname'] ?>" type="text" placeholder="Фамилия">
+                            <input class="profile_input" name="secondName" value="<?php echo $user['secondName'] ?>" type="text" placeholder="Отчество">
+                            <input class="profile_input" name="dateOfBirth" value="<?php echo $user['dateOfBirth'] ?>" type="date" placeholder="Дата рождения">
+                        </div>
+                        <div class="profile_additional">
+                            <div class="personal_title title">Дополнительная информация</div>
+                            <input class="additional_input" name="phoneNumber" value="<?php echo $user['phoneNumber'] ?>" type="tel" placeholder="+7 (___)-___-__-__">
+                            <input class="additional_input" name="email" value="<?php echo $user['email'] ?>" type="email" placeholder="E-mail">
+                            <input class="additional_input" name="driversLicense" value="<?php echo $user['driversLicense'] ?>" type="date" placeholder="Дата получения ВУ">
+                            <input class="additional_input" name="country" value="<?php echo $user['country'] ?>" type="text" placeholder="Гражданство">
+                        </div>
+                        <div class="profile_passwordChange">
+                            <div class="personal_title title">Изменение пароля</div>
+                            <input class="additional_input" name="password" type="password" placeholder="Новый пароль">
+                            <input class="additional_input" name="passwordRepeat" type="password" placeholder="Повторите новый пароль">
+                        </div>
+                        <button action="submit" id="profile_save" class="profile_save profile">Сохранить</button>
+                    </form>
+                </div>
+                <div class="wrapper_rent">
+                    <?php
+
+                    while ($carRent = mysqli_fetch_assoc($rent)) {
+
+                    ?>
+
+                        <div class="rent_block">
+                            <div class="rent_block_body">
+                                <img src="<?php
+
+                                            $mysql = new mysqli('localhost', 'root', 'root', 'luxuryrent');
+
+                                            $carId = $carRent["carId"];
+
+                                            $car = $mysql->query("SELECT * FROM `car` WHERE `id` = '$carId'");
+
+                                            $car = $car->fetch_assoc();
+
+                                            $mysql->close();
+
+                                            echo $car["img2"];
+
+                                            ?>" alt="">
+                                <div class="car">
+                                    <div class="carName"><?php
+                                                            echo $car["brand"];
+                                                            echo " ";
+                                                            echo $car["model"];
+                                                            ?></div>
+                                    <div class="carRent">
+
+                                        <div>
+                                            <div class="carDay">
+                                                <p>Период аренды:</p>
+                                                <b>
+                                                    <?php
+                                                    echo countDaysBetweenDates($carRent["dateOfReceiving"], $carRent["returnDate"]);
+
+                                                    if (countDaysBetweenDates($carRent["dateOfReceiving"], $carRent["returnDate"]) % 10 == 1) {
+                                                        echo " день";
+                                                    } else if (countDaysBetweenDates($carRent["dateOfReceiving"], $carRent["returnDate"]) % 10 > 1 && countDaysBetweenDates($carRent["dateOfReceiving"], $carRent["returnDate"]) % 10 < 5) {
+                                                        echo " дня";
+                                                    } else {
+                                                        echo " дней";
+                                                    }
+                                                    ?>
+                                                </b>
+                                            </div>
+                                            <div class="carDate">
+                                                <?php
+                                                echo date('d.m.Y', strtotime($carRent["dateOfReceiving"]));
+                                                ?>-
+                                                <?php echo date('d.m.Y', strtotime($carRent["returnDate"])); ?>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>Статус аредны:</p>
+                                            <b>На модерации</b><br>
+                                            <?php
+                                            echo date('d.m.y');
+                                            ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carInfo">
+                                <div class="moderation">На модерации</div>
+                                <div class="info">Детали сделки</div>
+                            </div>
+                        </div>
+
+
+                    <?php
+                    }
+
+                    ?>
                 </div>
             </div>
         </div>
@@ -203,6 +283,7 @@ $name = $user["name"];
     <script src="../js/script.js"></script>
     <script src="../js/registration.js"></script>
     <script src="../js/popup.js"></script>
+    <script src="../js/profile.js"></script>
 </body>
 
 </html>

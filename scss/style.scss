@@ -872,11 +872,13 @@ body.lock {
                 flex-direction: column;
                 align-items: center;
 
-                a {
+                div {
                     height: 20px;
                     color: #27282B;
                     font-size: 20px;
                     line-height: 24px;
+                    cursor: pointer;
+                    margin-bottom: 10px;
                 }
 
                 a:not(:first-child) {
@@ -890,6 +892,7 @@ body.lock {
             height: 1072px;
             background-color: #F4F4F4;
             border-radius: 20px;
+            display: none;
 
             .profile_subtitle {
                 width: 150px;
@@ -1002,9 +1005,6 @@ body.lock {
                 box-shadow: 2px 2px 1px #000000;
             }
 
-            #profile_save {
-                display: none;
-            }
         }
     }
 
@@ -1406,4 +1406,102 @@ body.lock {
     transition: all 0.5s ease 0s;
     position: relative;
     top: -482px;
+}
+
+.wrapper_rent {
+    width: 800px;
+}
+
+.rent_block {
+    background-color: #F4F4F4;
+    width: 800px;
+    height: 240px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+
+    .rent_block_body {
+
+        display: flex;
+    }
+
+
+    img {
+        margin-top: 22px;
+        width: 275px;
+        height: 138px;
+        position: relative;
+        border-radius: 0px 220px 220px 0px;
+
+    }
+
+    .carName {
+        font-size: 24px;
+        padding: 10px;
+        color: #27282B;
+        border-radius: 20px;
+        line-height: 27.34px;
+        font-family: Graduate;
+        text-align: center;
+    }
+
+    .carRent {
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        line-height: 24px;
+
+        p {
+            opacity: 0.8;
+        }
+
+    }
+
+}
+
+.rent_block:first-child {
+    margin-top: 30px;
+}
+
+.car {
+    margin-left: 32px;
+    width: 473px;
+}
+
+.carInfo {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 14px;
+    padding-right: 28px;
+
+    .moderation {
+        background: #FFC68C;
+        border-radius: 20px;
+        width: 220px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #F4F4F4;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .info {
+        background: #FFC68C;
+        border-radius: 20px;
+        width: 220px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #F4F4F4;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        box-shadow: 1px 1px 2px #000000;
+    }
 }

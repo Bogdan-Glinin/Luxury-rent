@@ -99,6 +99,4 @@ function registration() {
             }, delay);
         }
     }
-
-    return right;
 }
