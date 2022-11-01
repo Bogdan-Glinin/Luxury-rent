@@ -1,6 +1,6 @@
 <?php
 
-$mysql = new mysqli('localhost', 'root', 'root', 'luxuryrent');
+$mysql = new mysqli('localhost', 'root', '', 'luxuryrent');
 
 $result = $mysql->query("SELECT * FROM `car` WHERE `id` = 3");
 
