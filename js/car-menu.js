@@ -12,14 +12,14 @@ plus.onclick = function () {
     if (!document.querySelector('.peculiarities-hidden')) {
         hide.classList.add('peculiarities-hidden');
         move.style.top = '5px';
-        rent.style.top = '55px';
+        rent.style.top = '-100px';
         hide.style.transform = "translate(0px, 0px)";
         plus.style.transform = "rotate(45deg)"
     }
     else {
         hide.classList.remove('peculiarities-hidden');
         move.style.top = '-377px';
-        rent.style.top = '-432px';
+        rent.style.top = '-482px';
         hide.style.transform = "translate(0px, -100%)";
         plus.style.transform = "rotate(0deg)"
     }
@@ -29,15 +29,15 @@ plus1.onclick = function () {
 
     if (!document.querySelector('.rent-hidden')) {
         hide1.classList.add('rent-hidden');
-        if (!document.querySelector('.peculiarities-hidden')) { rent.style.top = '-270px'; }
-        else { rent.style.top = '50px'; }
+        if (!document.querySelector('.peculiarities-hidden')) { rent.style.top = '-340px'; }
+        else { rent.style.top = '45px'; }
         hide1.style.transform = "translate(0px, 0px)";
         plus1.style.transform = "rotate(45deg)"
     }
     else {
         hide1.classList.remove('rent-hidden');
-        if (!document.querySelector('.peculiarities-hidden')) { !document.querySelector('.peculiarities-hidden') }
-        else { rent.style.top = '5px'; }
+        if (!document.querySelector('.peculiarities-hidden')) { rent.style.top = '-490px'; }
+        else { rent.style.top = '-100px'; }
         hide1.style.transform = "translate(0px, -100%)";
         plus1.style.transform = "rotate(0deg)"
     }
