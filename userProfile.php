@@ -1,6 +1,6 @@
 <?php
 
-$mysql = new mysqli('localhost', 'root', 'root', 'luxuryrent');
+$mysql = new mysqli('localhost', 'root', '', 'luxuryrent');
 
 $cookie = $_COOKIE["id"];
 

@@ -10,8 +10,9 @@ $name = $data["popup_name"];
 $mail = $data["popup_email"];
 $password = $data["popup_password"];
 
-$mysql = new mysqli('localhost', 'root', 'root', 'luxuryrent');
+$mysql = new mysqli('localhost', 'root', '', 'luxuryrent');
 
 $mysql->query("INSERT INTO `user` (`name`, `email`, `password`) VALUES ('$name','$mail','$password')");
 
 $mysql->close();
+?>

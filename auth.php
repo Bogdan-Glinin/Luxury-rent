@@ -3,7 +3,7 @@
 $login = $_POST['auth_login'];
 $password = $_POST['auth_password'];
 
-$mysql = new mysqli('localhost', 'root', 'root', 'luxuryrent');
+$mysql = new mysqli('localhost', 'root', '', 'luxuryrent');
 
 $result = $mysql->query("SELECT * FROM `user` WHERE `email` = '$login' AND `password` = '$password'");
 

@@ -16,7 +16,7 @@ $passwordRepeat = $_POST['passwordRepeat'];
 if ($password != $passwordRepeat) {
     header("Location: pages/profile.php");
 } else {
-    $mysql = new mysqli('localhost', 'root', 'root', 'luxuryrent');
+    $mysql = new mysqli('localhost', 'root', '', 'luxuryrent');
 
     $mysql->query("UPDATE `user` SET `name`='$name', `surname`='$surname', `secondName`='$secondName', `dateOfBirth`='$dateOfBirth', `phoneNumber`='$phoneNumber', `email`='$email', `driversLicense`='$driversLicense', `country`='$country', `password`='$password' WHERE `id`='$cookie'");
 

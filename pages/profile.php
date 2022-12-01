@@ -110,7 +110,7 @@ $name = $user["name"];
                             <div class="rent_block_body">
                                 <img src="<?php
 
-                                            $mysql = new mysqli('localhost', 'root', 'root', 'luxuryrent');
+                                            $mysql = new mysqli('localhost', 'root', '', 'luxuryrent');
 
                                             $carId = $carRent["carId"];
 
