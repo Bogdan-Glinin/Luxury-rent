@@ -10,7 +10,7 @@ $name = $user["name"];
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../scss/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <title>Luxury rent</title>
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
@@ -99,7 +99,78 @@ $name = $user["name"];
                         <button action="submit" id="profile_save" class="profile_save profile">Сохранить</button>
                     </form>
                 </div>
-                <div class="wrapper_rent">
+                <div class="wrapper-docs">
+                    <div class="docs-block">
+                        <div class="docs-header">
+                            <div class="docs-h1">
+                                Личные документы
+                            </div>
+                            <div class="docs-h2">
+                                Сервис гарантирует конфиденциальность данных
+                            </div>
+                        </div>
+                        <div class="docs-subheader">
+                            Загрузите все документы. <br> После проверки вы сможете арендовать автомобиль.
+                        </div>
+                        <div class="docs-body">
+                            <div class="docs-passport">
+                                <div class="passport-header">
+                                    Паспорт
+                                </div>
+                                <div class="passport-body">
+                                    <div class="docs-item">
+                                        <div class="docs-item-header">
+                                            Первый разворот
+                                        </div>
+                                        <div class="docs-item-image">
+                                            <img src="/images/photo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="docs-item">
+                                        <div class="docs-item-header">
+                                            Второй разворот
+                                        </div>
+                                        <div class="docs-item-image">
+                                            <img src="/images/photo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="docs-item">
+                                        <div class="docs-item-header">
+                                            Селфи
+                                        </div>
+                                        <div class="docs-item-image">
+                                            <img src="/images/photo.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="docs-vu">
+                            <div class="vu-header">
+                                    Водительское удостоверение
+                                </div>
+                                <div class="vu-body">
+                                    <div class="vu-item">
+                                        <div class="vu-item-header">
+                                            Первая сторона
+                                        </div>
+                                        <div class="vu-item-image">
+                                            <img src="/images/photo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="vu-item">
+                                        <div class="vu-item-header">
+                                            Вторая сторона
+                                        </div>
+                                        <div class="vu-item-image">
+                                            <img src="/images/photo.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper_rent"> 
                     <?php
 
                     while ($carRent = mysqli_fetch_assoc($rent)) {
