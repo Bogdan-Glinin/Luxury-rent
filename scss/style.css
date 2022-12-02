@@ -1467,4 +1467,35 @@ body.lock {
 }
 .docs-block .docs-vu .vu-body .vu-item:nth-child(odd) {
   margin-left: 28px;
+}
+
+.main-header {
+  font-family: Graduate;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72.9px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.main-body {
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.main-body .catalog-item {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58.51px;
+  text-align: right;
+  color: #F4F4F4;
+}
+.main-body .catalog-item:hover {
+  color: #FFC68C;
+}
+.main-body #all-cars {
+  opacity: 0.1;
 }/*# sourceMappingURL=style.css.map */
