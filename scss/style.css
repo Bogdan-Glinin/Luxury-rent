@@ -159,8 +159,8 @@ body.lock {
   height: 100%;
 }
 .wrapper .header .header_body .header_menu .menu_location img {
-  width: 30px;
-  height: 30px;
+  width: 320;
+  height: 320;
   margin-right: 10px;
 }
 .wrapper .header .header_body .header_menu .menu_location p {
@@ -221,7 +221,7 @@ body.lock {
 }
 .wrapper .header .header_body .header_menu .menu_account #account_burger {
   margin: 200px auto;
-  width: 30px;
+  width: 300px;
   height: 40px;
   padding: 0;
   margin: 0;
@@ -234,8 +234,7 @@ body.lock {
 .wrapper .header .header_body .header_menu .menu_account #account_burger .burger_line {
   position: absolute;
   top: 8px;
-  right: 0;
-  width: 30px;
+  width: 32px;
   height: 2px;
   background: #F4F4F4;
 }
@@ -358,7 +357,7 @@ body.lock {
 .wrapper .main .main_body .carPark .carPark_content .content_item {
   width: 587px;
   height: 370px;
-  box-shadow: inset 0px 30px 35px 0px #27282B;
+  box-shadow: inset 0px 320 35px 0px #27282B;
 }
 .wrapper .main .main_body .carPark .carPark_content .content_item .title {
   font-size: 32px;
@@ -398,7 +397,7 @@ body.lock {
 }
 .wrapper .main .main_body .carPark .carPark_content .third {
   background-image: url(../images/audi1.png);
-  margin-top: 30px;
+  margin-top: 320;
 }
 .wrapper .main .main_body .carPark .carPark_content .third:hover {
   background-image: url(../images/audi2.png);
@@ -406,13 +405,13 @@ body.lock {
 .wrapper .main .main_body .carPark .carPark_content .fourth {
   background-image: url(../images/mustang1.png);
   margin-left: 26px;
-  margin-top: 30px;
+  margin-top: 320;
 }
 .wrapper .main .main_body .carPark .carPark_content .fourth:hover {
   background-image: url(../images/mustang2.png);
 }
 .wrapper .main .main_body .carPark_button {
-  margin-top: 30px;
+  margin-top: 320;
   width: 480px;
   height: 60px;
   border: 2px solid #FFC68C;
@@ -533,7 +532,7 @@ body.lock {
 }
 .wrapper .footer {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 320;
 }
 .wrapper .footer .footer_wrapper {
   width: 1205px;
@@ -644,7 +643,7 @@ body.lock {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 10px;
+  padding: 320 10px;
 }
 .popup .popup_body .popup_content {
   background-color: #27282B;
@@ -850,7 +849,7 @@ body.lock {
 .wrapper_body .wrapper_content .wrapper_profile .profile_personal input {
   padding-left: 10px;
   margin-top: 15px;
-  margin-left: 30px;
+  margin-left: 320;
   width: 742px;
   height: 50px;
   color: #27282B;
@@ -870,7 +869,7 @@ body.lock {
 .wrapper_body .wrapper_content .wrapper_profile .profile_additional input {
   padding-left: 10px;
   margin-top: 15px;
-  margin-left: 30px;
+  margin-left: 320;
   width: 742px;
   height: 50px;
   color: #27282B;
@@ -890,7 +889,7 @@ body.lock {
 .wrapper_body .wrapper_content .wrapper_profile .profile_passwordChange input {
   padding-left: 10px;
   margin-top: 15px;
-  margin-left: 30px;
+  margin-left: 320;
   width: 742px;
   height: 50px;
   color: #27282B;
@@ -943,7 +942,7 @@ body.lock {
   height: 50px;
   width: 468px;
   margin-left: 360px;
-  margin-top: 30px;
+  margin-top: 320;
   font-family: Montserrat;
   font-size: 20px;
   line-height: 24.38px;
@@ -953,7 +952,7 @@ body.lock {
 .feedback .feedback_number {
   height: 50px;
   width: 468px;
-  margin-top: 30px;
+  margin-top: 320;
   font-family: Montserrat;
   font-size: 20px;
   line-height: 24.38px;
@@ -974,7 +973,7 @@ body.lock {
   align-items: center;
   justify-content: center;
   margin-left: 360px;
-  margin-top: 30px;
+  margin-top: 320;
   cursor: pointer;
 }
 .feedback #feedback_button:hover {
@@ -983,7 +982,7 @@ body.lock {
 }
 
 .wrapper-lambo {
-  padding: 30px;
+  padding: 320;
   padding-top: 75px;
   min-height: 100%;
   position: relative;
@@ -1003,7 +1002,7 @@ body.lock {
 }
 
 .image-slider {
-  padding: 30px 0px 70px 0;
+  padding: 320 0px 70px 0;
 }
 
 .image-slider__image {
@@ -1167,7 +1166,7 @@ body.lock {
   justify-content: space-between;
   align-items: center;
   background-color: #5E6063;
-  padding: 30px 15px 28px 15px;
+  padding: 320 15px 28px 15px;
 }
 .car-menu .car-peculiarities .peculiarities-text {
   height: 400;
@@ -1197,7 +1196,7 @@ body.lock {
   line-height: 24.38px;
   color: #F4F4F4;
   padding-top: 20px;
-  padding-left: 30px;
+  padding-left: 320;
   transition: all 0.5s ease 0s;
   transform: translate(0px, -100%);
 }
@@ -1215,7 +1214,7 @@ body.lock {
   justify-content: space-between;
   align-items: center;
   background-color: #5E6063;
-  padding: 30px 15px 28px 15px;
+  padding: 320 15px 28px 15px;
 }
 .car-rent .rent-text {
   height: 400;
@@ -1239,7 +1238,7 @@ body.lock {
   line-height: 24.38px;
   color: #F4F4F4;
   padding-top: 20px;
-  padding-left: 30px;
+  padding-left: 320;
   transition: all 0.5s ease 0s;
   transform: translate(0px, -100%);
 }
@@ -1281,7 +1280,7 @@ body.lock {
   background-color: #F4F4F4;
   width: 800px;
   height: 240px;
-  margin-bottom: 30px;
+  margin-bottom: 320;
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px;
@@ -1316,7 +1315,7 @@ body.lock {
 }
 
 .rent_block:first-child {
-  margin-top: 30px;
+  margin-top: 320;
 }
 
 .car {
@@ -1404,7 +1403,7 @@ body.lock {
   text-align: center;
 }
 .docs-block .docs-passport .passport-header {
-  margin-top: 30px;
+  margin-top: 320;
   margin-left: 25px;
   font-family: Montserrat;
   font-weight: 600;
@@ -1421,8 +1420,8 @@ body.lock {
 .docs-block .docs-passport .passport-body .docs-item {
   width: 301px;
   height: 235px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-right: 320;
+  margin-bottom: 320;
 }
 .docs-block .docs-passport .passport-body .docs-item .docs-item-header {
   font-family: Montserrat;
@@ -1453,8 +1452,8 @@ body.lock {
 .docs-block .docs-vu .vu-body .vu-item {
   width: 301px;
   height: 235px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-right: 320;
+  margin-bottom: 320;
 }
 .docs-block .docs-vu .vu-body .vu-item .vu-item-header {
   font-family: Montserrat;
@@ -1486,16 +1485,74 @@ body.lock {
   flex-direction: row;
   justify-content: space-around;
 }
+.main-body .catalog-categories {
+  display: flex;
+  flex-direction: column;
+  margin-left: 185px;
+}
 .main-body .catalog-item {
   font-weight: 500;
   font-size: 48px;
   line-height: 58.51px;
   text-align: right;
   color: #F4F4F4;
+  width: 400px;
+}
+.main-body .catalog-item:not(:last-child) {
+  margin-bottom: 80px;
 }
 .main-body .catalog-item:hover {
   color: #FFC68C;
 }
-.main-body #all-cars {
+.main-body #coupe-img, .main-body #sportcars-img, .main-body #cabriolet-img, .main-body #SUV-img, .main-body #van-img {
   opacity: 0.1;
+  z-index: 0;
+}
+.main-body #coupe-img {
+  position: relative;
+  top: 117px;
+  left: 411px;
+}
+.main-body #sportcars-img {
+  position: relative;
+  top: 0;
+  left: -300px;
+}
+.main-body #cabriolet-img {
+  position: relative;
+  left: -650px;
+  top: 310px;
+}
+.main-body #SUV-img {
+  position: relative;
+  left: 450px;
+  top: 50px;
+}
+.main-body #van-img {
+  position: relative;
+  left: -220px;
+  top: 220px;
+}
+
+.allCars-header {
+  padding-left: 361px;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  background: #1B1B1B;
+}
+.allCars-header .help-hedaer {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 59px;
+  letter-spacing: 0.1em;
+  width: 575px;
+  color: #FFFFFF;
+}
+
+.catalog-body {
+  margin-bottom: 200px;
 }/*# sourceMappingURL=style.css.map */
