@@ -1,5 +1,6 @@
 <?php
 include "../userProfile.php";
+include "../send.php";
 $name = $user["name"];
 ?>
 
@@ -119,11 +120,13 @@ $name = $user["name"];
                                 </div>
                                 <div class="passport-body">
                                     <div class="docs-item">
-                                        <div class="docs-item-header">
+                                    <div class="docs-item-header">
+                                        <form action="../send.php" method="post" enctype="multipart/form-data">
+                                                <input type="file" name="file">
+                                                <input type="submit" value="загрузить">
+                                                <img src="/images/photo.png" alt="">
                                             Первый разворот
-                                        </div>
-                                        <div class="docs-item-image">
-                                            <img src="/images/photo.png" alt="">
+                                            </form>
                                         </div>
                                     </div>
                                     <div class="docs-item">
@@ -151,6 +154,7 @@ $name = $user["name"];
                                 <div class="vu-body">
                                     <div class="vu-item">
                                         <div class="vu-item-header">
+                                        
                                             Первая сторона
                                         </div>
                                         <div class="vu-item-image">
