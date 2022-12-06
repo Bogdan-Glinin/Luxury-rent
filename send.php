@@ -5,7 +5,7 @@ if (!empty ($_FILES['file'])){
     $file = $_FILES['file'];
     $name = $file['name'];
     $pathFile = __DIR__ .'/imgphoto/'.$name;
-    $filemane = $_COOKIE;
+    $userId = $_COOKIE["id"];
 
     
     
@@ -18,10 +18,11 @@ if (!empty ($_FILES['file'])){
     $db = new mysqli('localhost', 'root', '', 'luxuryrent')
     or die('Error in established MySQL-server connect');
 
-    $query = "INSERT INTO 'documents' ('photo_img', 'path', ) VALUES ('$name', '$pathFile')";
+    $db->query("INSERT INTO `documents` (`photo_img`, `path`, `userId` ) VALUES ('$name', '$pathFile', '$userId')");
 
-    $result = mysqli_query($db, $query)
-    or die ('Error in query to database');
+  
+   
+   
     mysqli_close($db);  
     
     
