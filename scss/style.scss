@@ -1726,6 +1726,127 @@ body.lock {
         color: #FFFFFF;
 
     }
+
+    .help-subheader{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29.26px;
+        color: #fff;
+        margin-top: 20px;
+    }
+
+    .help-button{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29.26px;
+        color: #FFC68C;
+        margin-top: 50px;
+    }
+}
+
+.allCars-body{
+
+    margin-top: 61px;
+
+    .allCars-body-header{
+
+        display: flex;
+        .allCars-title{
+            padding-left: 360px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 59px;
+            letter-spacing: 0.1em;
+            color: #F4F4F4;
+        }
+
+        .allCars-filter{
+            display: flex;
+            align-items: center;
+
+            .filter{
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                color: #F4F4F4;
+                margin-right: 40px;
+                img{
+                    margin-left: 5px;
+                }
+            }
+
+            .filter:first-child{
+                margin-left: 179px;
+            }
+
+               
+        }
+    }
+
+    .filter-menu{
+        z-index: 1;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 10px 13px;
+        border-radius: 10px;
+        position: relative;
+
+        label{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #5E6063;
+
+        }
+
+        input{
+            margin-right: 5px;
+        }
+    }
+
+    .mark{
+       top: -9px;
+       left: 930px;
+       display: none;
+    }
+
+    .allCars-body-main{
+        position: relative;
+        margin-top: 85px;
+        margin-bottom: 189px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .allCars-item{
+
+            width: 430px;
+            height: 270px;
+            margin-right: 20px;
+            margin-bottom: 41px;
+            
+        }
+
+        .allCars-first{
+            margin-left: 70px;
+        }
+
+        .allCars-item:nth-child(5n + 5){
+            margin-left: 70px;
+        }
+
+        
+    }
 }
 
 .catalog-body{

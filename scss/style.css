@@ -1552,6 +1552,104 @@ body.lock {
   width: 575px;
   color: #FFFFFF;
 }
+.allCars-header .help-subheader {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29.26px;
+  color: #fff;
+  margin-top: 20px;
+}
+.allCars-header .help-button {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29.26px;
+  color: #FFC68C;
+  margin-top: 50px;
+}
+
+.allCars-body {
+  margin-top: 61px;
+}
+.allCars-body .allCars-body-header {
+  display: flex;
+}
+.allCars-body .allCars-body-header .allCars-title {
+  padding-left: 360px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 59px;
+  letter-spacing: 0.1em;
+  color: #F4F4F4;
+}
+.allCars-body .allCars-body-header .allCars-filter {
+  display: flex;
+  align-items: center;
+}
+.allCars-body .allCars-body-header .allCars-filter .filter {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F4F4F4;
+  margin-right: 40px;
+}
+.allCars-body .allCars-body-header .allCars-filter .filter img {
+  margin-left: 5px;
+}
+.allCars-body .allCars-body-header .allCars-filter .filter:first-child {
+  margin-left: 179px;
+}
+.allCars-body .filter-menu {
+  z-index: 1;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10px 13px;
+  border-radius: 10px;
+  position: relative;
+}
+.allCars-body .filter-menu label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #5E6063;
+}
+.allCars-body .filter-menu input {
+  margin-right: 5px;
+}
+.allCars-body .mark {
+  top: -9px;
+  left: 930px;
+  display: none;
+}
+.allCars-body .allCars-body-main {
+  position: relative;
+  margin-top: 85px;
+  margin-bottom: 189px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.allCars-body .allCars-body-main .allCars-item {
+  width: 430px;
+  height: 270px;
+  margin-right: 20px;
+  margin-bottom: 41px;
+}
+.allCars-body .allCars-body-main .allCars-first {
+  margin-left: 70px;
+}
+.allCars-body .allCars-body-main .allCars-item:nth-child(5n+5) {
+  margin-left: 70px;
+}
 
 .catalog-body {
   margin-bottom: 200px;
