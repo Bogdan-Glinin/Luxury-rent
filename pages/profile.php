@@ -1,6 +1,7 @@
 <?php
 include "../userProfile.php";
 include "../send.php";
+include "../doc1.php";
 $name = $user["name"];
 ?>
 
@@ -121,28 +122,78 @@ $name = $user["name"];
                                 <div class="passport-body">
                                     <div class="docs-item">
                                     <div class="docs-item-header">
-                                        <form action="../send.php" method="post" enctype="multipart/form-data">
-                                                <input type="file" name="file">
-                                                <input type="submit" value="загрузить">
-                                                <img src="/images/photo.png" alt="">
-                                            Первый разворот
+                                    Первый разворот
+                                        <form action="../send.php" method="post" enctype="multipart/form-data" class="docs-item-header">
+                                                <input type="file" name="file" id="labelFile" class="inputFile">
+                                                <label for="labelFile">
+                                                <img src="<?php
+                                                
+                                        $mysql = new mysqli('localhost', 'root', '', 'luxuryrent');
+                                        $photoid = $_COOKIE["id"];
+                                        $data = 1;
+                                        $photo = $mysql->query("SELECT * FROM `documents` WHERE `userId` = '$photoid' and `type` = '$data'");
+                                        $photo = $photo->fetch_assoc();
+                                        $mysql->close();
+                                        echo $photo["path"];
+                                        if(empty ($photo["path"])){
+                                            echo '/images/photo.png';
+                                        }
+                                               ?> " alt="" class="docImg"></label>
+                                                <input type="submit" value="загрузить"  class="btnLoad">
+
                                             </form>
                                         </div>
                                     </div>
                                     <div class="docs-item">
                                         <div class="docs-item-header">
                                             Второй разворот
+                                            <form action="../doc1.php" method="post" enctype="multipart/form-data" class="docs-item-header">
+                                                <input type="file" name="file" id="labelFile1" class="inputFile">
+                                                <label for="labelFile1">
+                                                <img src="<?php
+                                                
+                                        $mysql = new mysqli('localhost', 'root', '', 'luxuryrent');
+                                        $photoid = $_COOKIE["id"];
+                                        $data = 2;
+                                        $photo = $mysql->query("SELECT * FROM `documents` WHERE `userId` = '$photoid' and `type` = '$data'");
+                                        $photo = $photo->fetch_assoc();
+                                        $mysql->close();
+                                        echo $photo["path"];
+                                        if(empty ($photo["path"])){
+                                            echo '/images/photo.png';
+                                        }
+                                               ?> " alt="" class="docImg"></label>
+                                                <input type="submit" value="загрузить"  class="btnLoad">
+
+                                            </form>
                                         </div>
                                         <div class="docs-item-image">
-                                            <img src="/images/photo.png" alt="">
                                         </div>
                                     </div>
                                     <div class="docs-item">
                                         <div class="docs-item-header">
                                             Селфи
+                                            <form action="../selfi.php" method="post" enctype="multipart/form-data" class="docs-item-header">
+                                                <input type="file" name="file" id="labelFile2" class="inputFile">
+                                                <label for="labelFile2">
+                                                <img src="<?php
+                                                
+                                        $mysql = new mysqli('localhost', 'root', '', 'luxuryrent');
+                                        $photoid = $_COOKIE["id"];
+                                        $data = 3;
+                                        $photo = $mysql->query("SELECT * FROM `documents` WHERE `userId` = '$photoid' and `type` = '$data'");
+                                        $photo = $photo->fetch_assoc();
+                                        $mysql->close();
+                                        echo $photo["path"];
+                                        if(empty ($photo["path"])){
+                                            echo '/images/photo.png';
+                                        }
+                                               ?> " alt="" class="docImg"></label>
+                                                <input type="submit" value="загрузить"  class="btnLoad">
+
+                                            </form>
                                         </div>
                                         <div class="docs-item-image">
-                                            <img src="/images/photo.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -156,17 +207,53 @@ $name = $user["name"];
                                         <div class="vu-item-header">
                                         
                                             Первая сторона
+                                            <form action="../driverLicense1.php" method="post" enctype="multipart/form-data" class="docs-item-header">
+                                                <input type="file" name="file" id="labelFile3" class="inputFile">
+                                                <label for="labelFile3">
+                                                <img src="<?php
+                                                
+                                        $mysql = new mysqli('localhost', 'root', '', 'luxuryrent');
+                                        $photoid = $_COOKIE["id"];
+                                        $data = 4;
+                                        $photo = $mysql->query("SELECT * FROM `documents` WHERE `userId` = '$photoid' and `type` = '$data'");
+                                        $photo = $photo->fetch_assoc();
+                                        $mysql->close();
+                                        echo $photo["path"];
+                                        if(empty ($photo["path"])){
+                                            echo '/images/photo.png';
+                                        }
+                                               ?> " alt="" class="docImg"></label>
+                                                <input type="submit" value="загрузить"  class="btnLoad">
+
+                                            </form>
                                         </div>
                                         <div class="vu-item-image">
-                                            <img src="/images/photo.png" alt="">
                                         </div>
                                     </div>
                                     <div class="vu-item">
                                         <div class="vu-item-header">
                                             Вторая сторона
+                                            <form action="../driverLicense2.php" method="post" enctype="multipart/form-data" class="docs-item-header">
+                                                <input type="file" name="file" id="labelFile4" class="inputFile">
+                                                <label for="labelFile4">
+                                                <img src="<?php
+                                                
+                                        $mysql = new mysqli('localhost', 'root', '', 'luxuryrent');
+                                        $photoid = $_COOKIE["id"];
+                                        $data = 5;
+                                        $photo = $mysql->query("SELECT * FROM `documents` WHERE `userId` = '$photoid' and `type` = '$data'");
+                                        $photo = $photo->fetch_assoc();
+                                        $mysql->close();
+                                        echo $photo["path"];
+                                        if(empty ($photo["path"])){
+                                            echo '/images/photo.png';
+                                        }
+                                               ?> " alt="" class="docImg"></label>
+                                                <input type="submit" value="загрузить"  class="btnLoad">
+
+                                            </form>
                                         </div>
                                         <div class="vu-item-image">
-                                            <img src="/images/photo.png" alt="">
                                         </div>
                                     </div>
                                 </div>
