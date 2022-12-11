@@ -1,9 +1,25 @@
 const mark = document.getElementById('mark');
 const markFilter = document.getElementById('mark-filter');
 const items = document.getElementById('cars-filter');
-// const AudiCheckbox = document.getElementById('Audi');
-// const cars = document.querySelectorAll(".allCars-item");
+const AudiCheckbox = document.getElementById('Audi');
+const bmwCheckbox = document.getElementById('bmw');
+const LamborghiniCheckbox = document.getElementById('Lamborghini');
+const astonCheckbox = document.getElementById('aston');
+const PorscheCheckbox = document.getElementById('Porsche');
+const rollsCheckbox = document.getElementById('rolls');
+const horp1Checkbox = document.getElementById('400h');
+const horp2Checkbox = document.getElementById('500h');
+const horp3Checkbox = document.getElementById('600h');
+const horp4Checkbox = document.getElementById('700h');
+const horp5Checkbox = document.getElementById('800h');
+const col1Checkbox = document.getElementById('white');
+const col2Checkbox = document.getElementById('black');
+const col3Checkbox = document.getElementById('orange');
+const col4Checkbox = document.getElementById('blue');
+const col5Checkbox = document.getElementById('gray');
+const cars = document.querySelectorAll(".allCars-item");
 const filter = document.querySelectorAll('.filter-menu');
+
 
 
 // mark.addEventListener("click", ()=> {
@@ -106,23 +122,270 @@ document.addEventListener('keydown', function(e) {
  
 
 
-// AudiCheckbox.onclick = function(){
-//     if(!AudiCheckbox.checked){
-//         cars.forEach(function(e4po4mack){
-//             if(!e4po4mack.classList.contains('audi')){
-//                 e4po4mack.style.display = 'block';
-//             }
-//         })
-//     }
-//     else{
-//         cars.forEach(function(e4po4mack){
-//             if(!e4po4mack.classList.contains('audi')){
-//                 e4po4mack.style.display = 'none';
-//             }
-//         })
-//     }
+ AudiCheckbox.onclick = function(){
+     if(!AudiCheckbox.checked){
+         cars.forEach(function(e4po4mack){
+            if(!e4po4mack.classList.contains('audi')){
+                 e4po4mack.style.display = 'block';
+             }
+         })
+     }
+     else{
+         cars.forEach(function(e4po4mack){
+             if(!e4po4mack.classList.contains('audi')){
+                e4po4mack.style.display = 'none';
+             }
+         })
+     }
     
-// }
+}
 
+bmwCheckbox.onclick = function(){
+    if(!bmwCheckbox.checked){
+        cars.forEach(function(e4po4mack){
+           if(!e4po4mack.classList.contains('bmw')){
+                e4po4mack.style.display = 'block';
+            }
+        })
+    }
+    else{
+        cars.forEach(function(e4po4mack){
+            if(!e4po4mack.classList.contains('bmw')){
+               e4po4mack.style.display = 'none';
+            }
+        })
+    }
+   
+}
+
+LamborghiniCheckbox.onclick = function(){
+    if(!LamborghiniCheckbox.checked){
+        cars.forEach(function(e4po4mack){
+           if(!e4po4mack.classList.contains('Lamborghini')){
+                e4po4mack.style.display = 'block';
+            }
+        })
+    }
+    else{
+        cars.forEach(function(e4po4mack){
+            if(!e4po4mack.classList.contains('Lamborghini')){
+               e4po4mack.style.display = 'none';
+            }
+        })
+    }
+   
+}
+
+astonCheckbox.onclick = function(){
+    if(!astonCheckbox.checked){
+        cars.forEach(function(e4po4mack){
+           if(!e4po4mack.classList.contains('aston')){
+                e4po4mack.style.display = 'block';
+            }
+        })
+    }
+    else{
+        cars.forEach(function(e4po4mack){
+            if(!e4po4mack.classList.contains('aston')){
+               e4po4mack.style.display = 'none';
+            }
+        })
+    }
+   
+}
+
+PorscheCheckbox.onclick = function(){
+    if(!PorscheCheckbox.checked){
+        cars.forEach(function(e4po4mack){
+           if(!e4po4mack.classList.contains('Porsche')){
+                e4po4mack.style.display = 'block';
+            }
+        })
+    }
+    else{
+        cars.forEach(function(e4po4mack){
+            if(!e4po4mack.classList.contains('Porsche')){
+               e4po4mack.style.display = 'none';
+            }
+        })
+    }
+   
+}
+
+horp1Checkbox.onclick = function(){
+    if(!horp1Checkbox.checked){
+        cars.forEach(function(e4po4mack){
+           if(!e4po4mack.classList.contains('400h')){
+                e4po4mack.style.display = 'block';
+            }
+        })
+    }
+    else{
+        cars.forEach(function(e4po4mack){
+            if(!e4po4mack.classList.contains('400h')){
+               e4po4mack.style.display = 'none';
+            }
+        })
+    }
+   
+}
+horp2Checkbox.onclick = function(){
+    if(!horp2Checkbox.checked){
+        cars.forEach(function(e4po4mack){
+           if(!e4po4mack.classList.contains('500h')){
+                e4po4mack.style.display = 'block';
+            }
+        })
+    }
+    else{
+        cars.forEach(function(e4po4mack){
+            if(!e4po4mack.classList.contains('500h')){
+               e4po4mack.style.display = 'none';
+            }
+        })
+    }
+   
+}
+horp3Checkbox.onclick = function(){
+    if(!horp3Checkbox.checked){
+        cars.forEach(function(e4po4mack){
+           if(!e4po4mack.classList.contains('600h')){
+                e4po4mack.style.display = 'block';
+            }
+        })
+    }
+    else{
+        cars.forEach(function(e4po4mack){
+            if(!e4po4mack.classList.contains('600h')){
+               e4po4mack.style.display = 'none';
+            }
+        })
+    }
+   
+}
+horp4Checkbox.onclick = function(){
+    if(!horp4Checkbox.checked){
+        cars.forEach(function(e4po4mack){
+           if(!e4po4mack.classList.contains('700h')){
+                e4po4mack.style.display = 'block';
+            }
+        })
+    }
+    else{
+        cars.forEach(function(e4po4mack){
+            if(!e4po4mack.classList.contains('700h')){
+               e4po4mack.style.display = 'none';
+            }
+        })
+    }
+   
+}
+horp5Checkbox.onclick = function(){
+    if(!horp5Checkbox.checked){
+        cars.forEach(function(e4po4mack){
+           if(!e4po4mack.classList.contains('800h')){
+                e4po4mack.style.display = 'block';
+            }
+        })
+    }
+    else{
+        cars.forEach(function(e4po4mack){
+            if(!e4po4mack.classList.contains('800h')){
+               e4po4mack.style.display = 'none';
+            }
+        })
+    }
+   
+}
+col1Checkbox.onclick = function(){
+    if(!col1Checkbox.checked){
+        cars.forEach(function(e4po4mack){
+           if(!e4po4mack.classList.contains('white')){
+                e4po4mack.style.display = 'block';
+            }
+        })
+    }
+    else{
+        cars.forEach(function(e4po4mack){
+            if(!e4po4mack.classList.contains('white')){
+               e4po4mack.style.display = 'none';
+            }
+        })
+    }
+   
+}
+col2Checkbox.onclick = function(){
+    if(!col2Checkbox.checked){
+        cars.forEach(function(e4po4mack){
+           if(!e4po4mack.classList.contains('black')){
+                e4po4mack.style.display = 'block';
+            }
+        })
+    }
+    else{
+        cars.forEach(function(e4po4mack){
+            if(!e4po4mack.classList.contains('black')){
+               e4po4mack.style.display = 'none';
+            }
+        })
+    }
+   
+}
+col3Checkbox.onclick = function(){
+    if(!col3Checkbox.checked){
+        cars.forEach(function(e4po4mack){
+           if(!e4po4mack.classList.contains('orange')){
+                e4po4mack.style.display = 'block';
+            }
+        })
+    }
+    else{
+        cars.forEach(function(e4po4mack){
+            if(!e4po4mack.classList.contains('orange')){
+               e4po4mack.style.display = 'none';
+            }
+        })
+    }
+   
+}
+col4Checkbox.onclick = function(){
+    if(!col4Checkbox.checked){
+        cars.forEach(function(e4po4mack){
+           if(!e4po4mack.classList.contains('blue')){
+                e4po4mack.style.display = 'block';
+            }
+        })
+    }
+    else{
+        cars.forEach(function(e4po4mack){
+            if(!e4po4mack.classList.contains('blue')){
+               e4po4mack.style.display = 'none';
+            }
+        })
+    }
+   
+}
+col5Checkbox.onclick = function(){
+    if(!col5Checkbox.checked){
+        cars.forEach(function(e4po4mack){
+           if(!e4po4mack.classList.contains('gray')){
+                e4po4mack.style.display = 'block';
+            }
+        })
+    }
+    else{
+        cars.forEach(function(e4po4mack){
+            if(!e4po4mack.classList.contains('gray')){
+               e4po4mack.style.display = 'none';
+            }
+        })
+    }
+   
+}
+
+butt.onclick = function() {
+    var val1 = document.getElementById('num1').value;
+    var val2 = document.getElementById('num2').value;
+}
 
 

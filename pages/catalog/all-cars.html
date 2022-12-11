@@ -61,7 +61,7 @@
                     <img src="/images/catalog/main/allCars/unsplash_z-3lZfFdsj0.png" alt="">
                 </div>
            </div>
-           <div class="allCars-body">
+           <div class="allCars-body ">
                 <div class="allCars-body-header">
                     <div class="allCars-title">
                         Все автомобили
@@ -88,54 +88,54 @@
                 </div>
                 <div id ="mark-filter"class="mark filter-menu">
                     <label><input id="Audi" type="checkbox">Audi</label>
-                    <label><input type="checkbox">BMW</label>
-                    <label><input type="checkbox">Lamborghini</label>
-                    <label><input type="checkbox">Aston Martin</label>
-                    <label><input type="checkbox">Porsche</label>
-                    <label><input type="checkbox">Rolls Royce</label>
+                    <label><input id="bmw" type="checkbox" class="checkbox">BMW</label>
+                    <label><input id="Lamborghini" type="checkbox" class="checkbox">Lamborghini</label>
+                    <label><input id="aston" type="checkbox" id="aston" class="checkbox">Aston Martin</label>
+                    <label><input id="Porsche" type="checkbox" class="checkbox">Porsche</label>
+                    <label><input id="rolls" type="checkbox" class="checkbox" data-filter="rolls">Rolls Royce</label>
                 </div>
 
                 <div id="power-filter" class="power filter-menu">
-                    <label><input type="checkbox">300-400 л.с</label>
-                    <label><input type="checkbox">400-500 л.с</label>
-                    <label><input type="checkbox">500-600 л.с</label>
-                    <label><input type="checkbox">600-700 л.с</label>
-                    <label><input type="checkbox">700-800 л.с</label>
+                    <label><input id="400h" type="checkbox" class="checkbox" data-filter="400">300-400 л.с</label>
+                    <label><input id="500h" type="checkbox" class="checkbox" data-filter="500">400-500 л.с</label>
+                    <label><input id="600h" type="checkbox" class="checkbox" data-filter="600">500-600 л.с</label>
+                    <label><input id="700h" type="checkbox" class="checkbox" data-filter="700">600-700 л.с</label>
+                    <label><input id="800h" type="checkbox" class="checkbox" data-filter="800">700-800 л.с</label>
                 </div>
                 <div id="color-filter" class="color filter-menu">
-                    <label><input type="checkbox">Белый</label>
-                    <label><input type="checkbox">Черный</label>
-                    <label><input type="checkbox">Оранжевый</label>
-                    <label><input type="checkbox">Синий</label>
-                    <label><input type="checkbox">Серый</label>
+                    <label><input id="white" type="checkbox" class="checkbox" data-filter="white">Белый</label>
+                    <label><input id="black" type="checkbox" class="checkbox" data-filter="black">Черный</label>
+                    <label><input id="orange" type="checkbox" class="checkbox" data-filter="orange">Оранжевый</label>
+                    <label><input id="blue" type="checkbox" class="checkbox" data-filter="blue">Синий</label>
+                    <label><input id="gray" type="checkbox" class="checkbox" data-filter="gray">Серый</label>
                 </div>
                 <div id="price-filter" class="price filter-menu">
-                    <input type="number" placeholder="20000"> — <input type="number" placeholder="200000">
-                    <button> ОК </button>
+                    <input type="number" placeholder="20000" id="num1"> — <input type="number" placeholder="200000" id="num2">
+                    <button id="butt"> ОК </button>
                 </div>
                 <div class="allCars-body-main" id="cars-filter">
-                    <div class="allCars-item lambo allCars-first">
+                    <div class="allCars-item Lamborghini black 800h allCars-first">
                         <img src="/images/catalog/main/allCars/фото1.png" alt="">
                     </div>
-                    <div class="allCars-item rolls">
+                    <div class="allCars-item 600h black rolls">
                         <img src="/images/catalog/main/allCars/фото2.png" alt="">
                     </div>
-                    <div class="allCars-item audi">
+                    <div class="allCars-item 600h black audi">
                         <img src="/images/catalog/main/allCars/фото3.png" alt="">
-                    </div>
-                    <div class="allCars-item ford">
+                    </div>  
+                    <div class="allCars-item 500h white ford">
                         <img src="/images/catalog/main/allCars/фото4.png" alt="">
                     </div>
-                    <div class="allCars-item lambo">
+                    <div class="allCars-item 700h orange Lamborghini">
                         <img src="/images/catalog/main/allCars/фото5.png" alt="">
                     </div>
-                    <div class="allCars-item aston">
+                    <div class="allCars-item 600h lime aston">
                         <img src="/images/catalog/main/allCars/фото6.png" alt="">
                     </div>
-                    <div class="allCars-item porsche">
+                    <div class="allCars-item 600h black Porsche">
                         <img src="/images/catalog/main/allCars/фото7.png" alt="">
                     </div>
-                    <div class="allCars-item cadillac">
+                    <div class="allCars-item 500h black cadillac">
                         <img src="/images/catalog/main/allCars/фото8.png" alt="">
                     </div>
                 </div>
@@ -245,7 +245,7 @@
         
     </div>
     <div class="choiceAuto" id="choiceAuto">
-        <form action="../../choiceAutoFeedBack.php" method="POST" id="ajax-form">
+    <form action="../../choiceAutoFeedBack.php" method="POST" id="ajax-form">
         <div class="choiceAuto-header">
             Подберем лучший автомобиль для вас
         </div>
@@ -277,5 +277,6 @@
     <script src="/js/popup.js"></script>
     <script src="/js/registration.js"></script>
     <script src="/js/filter.js"></script>
+    <script src="js/choiceAutoFeedBack.js"></script>
 </body>
 </html>

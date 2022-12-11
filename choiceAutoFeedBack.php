@@ -28,5 +28,4 @@ $mail->Body = $body;
 
 $mail->send();
 
-header('Location: /pages/catalog/all-cars.html');
 ?>
