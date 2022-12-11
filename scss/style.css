@@ -77,6 +77,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Montserrat;
   src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 * {
   font-family: Montserrat;
 }
@@ -1630,6 +1635,40 @@ body.lock {
   top: -9px;
   left: 930px;
   display: none;
+}
+.allCars-body .power {
+  top: -9px;
+  left: 1050px;
+  display: none;
+}
+.allCars-body .color {
+  top: -9px;
+  left: 1225px;
+  display: none;
+}
+.allCars-body .price {
+  top: -9px;
+  left: 1345px;
+  display: none;
+}
+.allCars-body #price-filter {
+  width: 345px;
+}
+.allCars-body #price-filter input {
+  width: 110px;
+  height: 30px;
+  border: 1px solid #B7B7B7;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #5E6063;
+}
+.allCars-body #price-filter button {
+  width: 45px;
+  height: 30px;
+  background: none;
+  border: 1px solid #B7B7B7;
 }
 .allCars-body .allCars-body-main {
   position: relative;

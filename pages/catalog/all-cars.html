@@ -72,15 +72,15 @@
                             Марка
                             <img src="../../images/catalog/main/allCars/arrow-down.png" alt="">
                         </div>
-                        <div class="filter-power filter">
+                        <div id="power" class="filter-power filter">
                             Мощность
                             <img src="../../images/catalog/main/allCars/arrow-down.png" alt="">
                         </div>
-                        <div class="filter-color filter">
+                        <div id="color" class="filter-color filter">
                             Цвет
                             <img src="../../images/catalog/main/allCars/arrow-down.png" alt="">
                         </div>
-                        <div class="filter-price filter">
+                        <div id="price" class="filter-price filter">
                             Цена
                             <img src="../../images/catalog/main/allCars/arrow-down.png" alt="">
                         </div>
@@ -93,6 +93,25 @@
                     <label><input type="checkbox">Aston Martin</label>
                     <label><input type="checkbox">Porsche</label>
                     <label><input type="checkbox">Rolls Royce</label>
+                </div>
+
+                <div id="power-filter" class="power filter-menu">
+                    <label><input type="checkbox">300-400 л.с</label>
+                    <label><input type="checkbox">400-500 л.с</label>
+                    <label><input type="checkbox">500-600 л.с</label>
+                    <label><input type="checkbox">600-700 л.с</label>
+                    <label><input type="checkbox">700-800 л.с</label>
+                </div>
+                <div id="color-filter" class="color filter-menu">
+                    <label><input type="checkbox">Белый</label>
+                    <label><input type="checkbox">Черный</label>
+                    <label><input type="checkbox">Оранжевый</label>
+                    <label><input type="checkbox">Синий</label>
+                    <label><input type="checkbox">Серый</label>
+                </div>
+                <div id="price-filter" class="price filter-menu">
+                    <input type="number" placeholder="20000"> — <input type="number" placeholder="200000">
+                    <button> ОК </button>
                 </div>
                 <div class="allCars-body-main" id="cars-filter">
                     <div class="allCars-item lambo allCars-first">
