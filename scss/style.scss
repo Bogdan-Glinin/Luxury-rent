@@ -2,8 +2,10 @@
 
 @font-face {
     font-family: Montserrat;
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    src: url('https://fonts.googleapis.com/css?family=Montserrat');
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
 
@@ -1727,12 +1729,12 @@ body.lock {
         font-size: 48px;
         line-height: 59px;
         letter-spacing: 0.1em;
-        width: 575px;
         color: #FFFFFF;
 
     }
 
     .help-subheader{
+        width: 461px;
         font-weight: 400;
         font-size: 24px;
         line-height: 29.26px;
@@ -1741,6 +1743,7 @@ body.lock {
     }
 
     .help-button{
+        cursor: pointer;
         font-weight: 500;
         font-size: 24px;
         line-height: 29.26px;
@@ -1757,13 +1760,13 @@ body.lock {
 
         display: flex;
         .allCars-title{
+            width: 850px;
             padding-left: 360px;
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 500;
             font-size: 48px;
             line-height: 59px;
-            letter-spacing: 0.1em;
             color: #F4F4F4;
         }
 
@@ -1898,3 +1901,102 @@ body.lock {
     margin-bottom: 200px;
 }
 
+.choiceAuto{
+    position: absolute;
+    display: none;
+    top: 466px;
+    left: 560px;
+    width: 800px;
+    height: 820px;
+    background: url(/images/catalog/main/image-highPolygon.png) #fff;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    color: #27282B;
+    
+
+    .choiceAuto-header{
+        margin-right: 104px;
+        margin-left: 104px;
+        padding-top: 95px;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 110%;
+        text-align: center;
+
+    }
+
+    .choiceAuto-subheader{
+        margin-top: 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #5E6063;
+        margin-left: 68px;
+        width: 665px;
+        margin-bottom: 45px;
+
+    }
+
+    .choise-input{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #27282B;
+        margin-bottom: 10px;
+        margin-left: 80px;
+    }
+
+    input{
+        margin-left: 80px;
+        height: 50px;
+        width: 641px;
+        border: 1px solid #27282B;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        padding-left: 5px;
+    }
+
+    .choice-send{
+        cursor: pointer;
+        height: 60px;
+        width: 415px;
+        margin-left: 193px;
+        margin-top: 25px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: #F4F4F4;
+        background: #27282B;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .choice-send:hover{
+        background: #FFC68C;
+        color: #27282B
+    }
+
+    .choice-info{
+        margin-top: 15px;
+        margin-left: 131px;
+        width: 538px;
+        height: 50px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #5E6063;
+    }
+}

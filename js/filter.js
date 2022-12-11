@@ -91,6 +91,21 @@ price.onclick = function(){
     }
 }
 
+const help = document.querySelector('.help-button');
+const helpWindow = document.querySelector('.choiceAuto');
+
+help.addEventListener("click", () => {
+    helpWindow.style.display = "block";
+})
+
+document.addEventListener('keydown', function(e) {
+	if( e.keyCode == 27 ){ // код клавиши Escape, но можно использовать e.key
+		helpWindow.style.display = 'none';
+	}
+});
+ 
+
+
 // AudiCheckbox.onclick = function(){
 //     if(!AudiCheckbox.checked){
 //         cars.forEach(function(e4po4mack){
