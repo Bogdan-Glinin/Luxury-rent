@@ -19,6 +19,9 @@ const col4Checkbox = document.getElementById('blue');
 const col5Checkbox = document.getElementById('gray');
 const cars = document.querySelectorAll(".allCars-item");
 const filter = document.querySelectorAll('.filter-menu');
+var bool = false;
+var bool2 = false;
+var count = 1;
 
 
 
@@ -127,6 +130,10 @@ document.addEventListener('keydown', function(e) {
          cars.forEach(function(e4po4mack){
             if(!e4po4mack.classList.contains('audi')){
                  e4po4mack.style.display = 'block';
+                 
+             }
+             else{
+                e4po4mack.classList.toggle("allCars_first");
              }
          })
      }
@@ -135,9 +142,37 @@ document.addEventListener('keydown', function(e) {
              if(!e4po4mack.classList.contains('audi')){
                 e4po4mack.style.display = 'none';
              }
+             else{
+                e4po4mack.classList.toggle("allCars_first");
+             }
          })
      }
     
+}
+
+rollsCheckbox.onclick = function(){
+    if(!rollsCheckbox.checked){
+        cars.forEach(function(e4po4mack){
+           if(!e4po4mack.classList.contains('rolls')){
+                e4po4mack.style.display = 'block';
+                
+            }
+            else{
+               e4po4mack.classList.toggle("allCars_first");
+            }
+        })
+    }
+    else{
+        cars.forEach(function(e4po4mack){
+            if(!e4po4mack.classList.contains('rolls')){
+               e4po4mack.style.display = 'none';
+            }
+            else{
+               e4po4mack.classList.toggle("allCars_first");
+            }
+        })
+    }
+   
 }
 
 bmwCheckbox.onclick = function(){
@@ -146,6 +181,9 @@ bmwCheckbox.onclick = function(){
            if(!e4po4mack.classList.contains('bmw')){
                 e4po4mack.style.display = 'block';
             }
+            else{
+                e4po4mack.classList.toggle("allCars_first");
+             }
         })
     }
     else{
@@ -153,6 +191,9 @@ bmwCheckbox.onclick = function(){
             if(!e4po4mack.classList.contains('bmw')){
                e4po4mack.style.display = 'none';
             }
+            else{
+                e4po4mack.classList.toggle("allCars_first");
+             }
         })
     }
    
@@ -164,12 +205,30 @@ LamborghiniCheckbox.onclick = function(){
            if(!e4po4mack.classList.contains('Lamborghini')){
                 e4po4mack.style.display = 'block';
             }
+            else{
+                if(!e4po4mack.classList.contains("allCars_first")) !e4po4mack.classList.toggle("allCars_first");
+                bool = false;
+            }
         })
     }
     else{
         cars.forEach(function(e4po4mack){
             if(!e4po4mack.classList.contains('Lamborghini')){
                e4po4mack.style.display = 'none';
+                
+                
+            }
+            else{
+
+                if(!bool && e4po4mack.classList.contains("allCars_first")) {
+                
+                    bool = true;
+                }
+                else
+                {
+                    e4po4mack.classList.toggle("allCars_first");
+                }
+                
             }
         })
     }
@@ -182,6 +241,9 @@ astonCheckbox.onclick = function(){
            if(!e4po4mack.classList.contains('aston')){
                 e4po4mack.style.display = 'block';
             }
+            else{
+                e4po4mack.classList.toggle("allCars_first");
+             }
         })
     }
     else{
@@ -189,6 +251,9 @@ astonCheckbox.onclick = function(){
             if(!e4po4mack.classList.contains('aston')){
                e4po4mack.style.display = 'none';
             }
+            else{
+                e4po4mack.classList.toggle("allCars_first");
+             }
         })
     }
    
@@ -200,6 +265,9 @@ PorscheCheckbox.onclick = function(){
            if(!e4po4mack.classList.contains('Porsche')){
                 e4po4mack.style.display = 'block';
             }
+            else{
+                e4po4mack.classList.toggle("allCars_first");
+             }
         })
     }
     else{
@@ -207,6 +275,9 @@ PorscheCheckbox.onclick = function(){
             if(!e4po4mack.classList.contains('Porsche')){
                e4po4mack.style.display = 'none';
             }
+            else{
+                e4po4mack.classList.toggle("allCars_first");
+             }
         })
     }
    
@@ -218,6 +289,7 @@ horp1Checkbox.onclick = function(){
            if(!e4po4mack.classList.contains('400h')){
                 e4po4mack.style.display = 'block';
             }
+            
         })
     }
     else{
@@ -235,12 +307,30 @@ horp2Checkbox.onclick = function(){
            if(!e4po4mack.classList.contains('500h')){
                 e4po4mack.style.display = 'block';
             }
+            else{
+
+                e4po4mack.classList.remove("allCars_first");
+                bool = false;
+            }
         })
     }
     else{
         cars.forEach(function(e4po4mack){
             if(!e4po4mack.classList.contains('500h')){
                e4po4mack.style.display = 'none';
+            }
+            else{
+                if(!e4po4mack.classList.contains("allCars_first") && !bool){
+                    e4po4mack.classList.add("allCars_first");
+                    bool = true;
+               }
+               else if(e4po4mack.classList.contains("allCars_first") && !bool){
+                    bool2 = true
+                    bool = true;
+               }
+               else{
+                e4po4mack.classList.remove("allCars_first");
+               }
             }
         })
     }
@@ -252,12 +342,22 @@ horp3Checkbox.onclick = function(){
            if(!e4po4mack.classList.contains('600h')){
                 e4po4mack.style.display = 'block';
             }
+            else{
+                count == 1;
+                e4po4mack.classList.remove("allCars_first");
+            }
         })
     }
     else{
         cars.forEach(function(e4po4mack){
             if(!e4po4mack.classList.contains('600h')){
                e4po4mack.style.display = 'none';
+            }
+            else{
+                if(count == 1 || count / 5 == 0){
+                    e4po4mack.classList.add("allCars_first");
+                    count++;
+                }
             }
         })
     }
@@ -298,10 +398,15 @@ horp5Checkbox.onclick = function(){
    
 }
 col1Checkbox.onclick = function(){
+    var count2 = 1;
     if(!col1Checkbox.checked){
         cars.forEach(function(e4po4mack){
            if(!e4po4mack.classList.contains('white')){
                 e4po4mack.style.display = 'block';
+            }
+            else{
+                count2 = 1;
+                e4po4mack.classList.remove("allCars_first");
             }
         })
     }
@@ -310,15 +415,33 @@ col1Checkbox.onclick = function(){
             if(!e4po4mack.classList.contains('white')){
                e4po4mack.style.display = 'none';
             }
+            else{
+                if(count2 == 1 || count2 / 5 == 0 ){
+                    e4po4mack.classList.add("allCars_first");
+                    count2++;
+                }
+            }
         })
     }
    
 }
 col2Checkbox.onclick = function(){
+    var count2 = 1;
+    var bool2 = false;
     if(!col2Checkbox.checked){
         cars.forEach(function(e4po4mack){
            if(!e4po4mack.classList.contains('black')){
                 e4po4mack.style.display = 'block';
+            }
+            else{
+                count2 = 1;
+                if(!bool2){
+                    bool2 = true;
+                }
+                else{
+                    e4po4mack.classList.remove("allCars_first");
+                }
+                
             }
         })
     }
@@ -326,6 +449,13 @@ col2Checkbox.onclick = function(){
         cars.forEach(function(e4po4mack){
             if(!e4po4mack.classList.contains('black')){
                e4po4mack.style.display = 'none';
+            }
+            else{
+                if(count2 % 5 == 0 ){
+                    e4po4mack.classList.add("allCars_first");
+                    
+                }
+                count2++;
             }
         })
     }
