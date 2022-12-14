@@ -2007,4 +2007,50 @@ body.lock {
   font-size: 20px;
   line-height: 24px;
   color: #f4f4f4;
+}
+
+.docImg {
+  width: 290px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.inputFile {
+  display: none;
+}
+
+.btnLoad {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  position: relative;
+  border: 2px solid #f1c40f;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.4s;
+}
+
+.btnLoad:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: 0.4s;
+}
+
+.btnLoad:hover:after {
+  border-color: #f1c40f;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+}
+
+.choice-send1 {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
