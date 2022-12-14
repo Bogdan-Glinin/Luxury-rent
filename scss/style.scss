@@ -897,6 +897,7 @@ body.lock {
         width: 440px;
         margin-top: 15px;
         margin-left: 28px;
+
       }
 
       .profile_personal {
@@ -915,7 +916,7 @@ body.lock {
         input {
           padding-left: 10px;
           margin-top: 15px;
-          margin-left: 320;
+          margin-left: 32px;
           width: 742px;
           height: 50px;
           color: #27282b;
@@ -939,7 +940,7 @@ body.lock {
         input {
           padding-left: 10px;
           margin-top: 15px;
-          margin-left: 320;
+          margin-left: 32px;
           width: 742px;
           height: 50px;
           color: #27282b;
@@ -963,7 +964,7 @@ body.lock {
         input {
           padding-left: 10px;
           margin-top: 15px;
-          margin-left: 320;
+          margin-left: 32px;
           width: 742px;
           height: 50px;
           color: #27282b;
@@ -1396,7 +1397,7 @@ body.lock {
   background-color: #f4f4f4;
   width: 800px;
   height: 240px;
-  margin-bottom: 320;
+  margin-bottom: 32px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px;
@@ -1483,13 +1484,14 @@ body.lock {
 
 .wrapper-docs {
   display: none;
+  
 }
 
 .docs-block {
   background-color: #f4f4f4;
   border-radius: 20px;
   width: 800px;
-  height: 1180px;
+  height: 1250px;
 
   .docs-header {
     height: 148px;
@@ -1554,9 +1556,13 @@ body.lock {
           font-size: 20px;
           line-height: 24.38px;
           color: #27282b;
-          opacity: 0.6;
           margin-bottom: 15px;
         }
+      }
+
+      .docs-item:nth-child(3){
+        margin-top: 75px;
+        margin-bottom: 50px;
       }
 
       .docs-item:nth-child(odd) {
@@ -1591,7 +1597,6 @@ body.lock {
           font-size: 20px;
           line-height: 24.38px;
           color: #27282b;
-          opacity: 0.6;
           margin-bottom: 15px;
         }
       }

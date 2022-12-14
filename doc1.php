@@ -7,7 +7,7 @@ if (!empty ($_FILES['file'])){
     $pathFile = __DIR__ .'/imgphoto/'.$name;
     $userId = $_COOKIE["id"];
     $actualPath = '/imgphoto/'.$name;
-    $data = 3;
+    $data = 2;
     
     
     

@@ -341,7 +341,7 @@ $name = $user["name"];
                 </div>
             </div>
         </div>
-        <div class="footer">
+        <div class="footer" style="margin-top:150px;">
             <div class="footer_wrapper">
                 <div class="footer_politics">
                     <div class="politics_logo"><img src="../images/Logo.png" alt=""></div>
