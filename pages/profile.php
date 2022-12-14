@@ -21,7 +21,6 @@ $name = $user["name"];
 
 <body>
 
-
     <div class="wrapper">
         <div class="header lock_padding">
             <div class="header_body">
@@ -54,10 +53,9 @@ $name = $user["name"];
                             </div>
                             <nav>
                                 <a href="#popup" class="popup_link">Мой профиль</a>
-                                <a href="#">Автопарк</a>
-                                <a href="#">Условия</a>
-                                <a href="#">О нас</a>
-                                <a href="#">Контакты</a>
+                                <a href="/pages/catalog.html">Автопарк</a>
+                                <a href="/pages/terms.html">Условия</a>
+                                <a href="/pages/aboutUs.html">О нас</a>
                             </nav>
                         </div>
                     </div>
@@ -126,7 +124,8 @@ $name = $user["name"];
                                         <form action="../send.php" method="post" enctype="multipart/form-data" class="docs-item-header">
                                                 <input type="file" name="file" id="labelFile" class="inputFile">
                                                 <label for="labelFile">
-                                                <img src="<?php
+                                                <img src="
+                                                <?php
                                                 
                                         $mysql = new mysqli('localhost', 'root', '', 'luxuryrent');
                                         $photoid = $_COOKIE["id"];
@@ -355,16 +354,14 @@ $name = $user["name"];
                 <div class="footer_menu">
                     <div class="menu_title title">Разделы:</div>
                     <div class="menu_content">
-                        <a href="#popup" class="popup_link">
+                    <a href="#popup" class="popup_link">
                             <p>Мой профиль</p>
-                        </a><a href="#">
+                        </a><a href="/pages/catalog.html">
                             <p>Автопарк</p>
-                        </a><a href="#">
+                        </a><a href="/pages/terms.html">
                             <p>Условия</p>
-                        </a><a href="#">
+                        </a><a href="/pages/aboutUs.html">
                             <p>О нас</p>
-                        </a><a href="#">
-                            <p>Контакты</p>
                         </a>
                     </div>
                 </div>
@@ -442,10 +439,10 @@ $name = $user["name"];
     </div>
 
 
-    <script src="../js/script.js"></script>
-    <script src="../js/registration.js"></script>
-    <script src="../js/popup.js"></script>
-    <script src="../js/profile.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/registration.js"></script>
+    <script src="/js/popup.js"></script>
+    <script src="/js/profile.js"></script>
 </body>
 
 </html>

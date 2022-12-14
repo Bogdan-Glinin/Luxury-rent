@@ -66,10 +66,9 @@ setcookie("carId", $car["id"], time() + 300, "/");
                             </div>
                             <nav>
                                 <a href="#popup" class="popup_link">Мой профиль</a>
-                                <a href="#">Автопарк</a>
-                                <a href="#">Условия</a>
-                                <a href="#">О нас</a>
-                                <a href="#">Контакты</a>
+                                <a href="/pages/catalog.html">Автопарк</a>
+                                <a href="/pages/terms.html">Условия</a>
+                                <a href="/pages/aboutUs.html">О нас</a>
                             </nav>
                         </div>
                     </div>
@@ -218,17 +217,15 @@ setcookie("carId", $car["id"], time() + 300, "/");
                     <div class="footer_menu">
                         <div class="menu_title title">Разделы:</div>
                         <div class="menu_content">
-                            <a href="#popup" class="popup_link">
-                                <p>Мой профиль</p>
-                            </a><a href="#">
-                                <p>Автопарк</p>
-                            </a><a href="#">
-                                <p>Условия</p>
-                            </a><a href="#">
-                                <p>О нас</p>
-                            </a><a href="#">
-                                <p>Контакты</p>
-                            </a>
+                        <a href="#popup" class="popup_link">
+                            <p>Мой профиль</p>
+                        </a><a href="/pages/catalog.html">
+                            <p>Автопарк</p>
+                        </a><a href="/pages/terms.html">
+                            <p>Условия</p>
+                        </a><a href="/pages/aboutUs.html">
+                            <p>О нас</p>
+                        </a>
                         </div>
                     </div>
                     <div class="footer_contacts">
