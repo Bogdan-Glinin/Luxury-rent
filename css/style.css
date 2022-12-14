@@ -7,6 +7,7 @@
   border: 0;
 }
 
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1654,28 +1655,6 @@ body.lock {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
-}
-
-.carInfo .info {
-  background: #FFC68C;
-  border-radius: 20px;
-  width: 220px;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #F4F4F4;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  -webkit-box-shadow: 1px 1px 2px #000000;
-          box-shadow: 1px 1px 2px #000000;
 }
 
 
